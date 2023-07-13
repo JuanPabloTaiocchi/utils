@@ -1,0 +1,22 @@
+{
+  "name": "@jpma/utils",
+  "version": "0.0.1",
+  "description": "A set of JavaScript utils",
+  "main": "lib/es5/index.js",
+  "module": "lib/es6/index.js",
+  "sideEffects": false,
+  "files": [
+    "lib",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "javascript",
+    "utils",
+    "utilities"
+  ],
+  "author": "Juan Pablo Taiocchi",
+  "license": "MIT"
+}

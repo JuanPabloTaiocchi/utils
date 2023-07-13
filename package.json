@@ -1,0 +1,16 @@
+{
+  "name": "jpma-utils",
+  "version": "1.0.0",
+  "repository": "https://github.com/JuanPabloTaiocchi/utils.git",
+  "author": {
+    "name": "Juan Pablo Taiocchi",
+    "email": "Pablo T. <pablo.taiocchi@hotmail.com>"
+  },
+  "license": "MIT",
+  "scripts": {
+    "compile": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
+}
