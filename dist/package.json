@@ -1,5 +1,5 @@
 {
-  "name": "@jpma/utils",
+  "name": "jpma-utils",
   "version": "0.0.1",
   "repository": "https://github.com/JuanPabloTaiocchi/utils.git",
   "description": "A set of JavaScript utils",

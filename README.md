@@ -1,3 +1,5 @@
 per compilare:
 
-npm run compile
+* npm run compile
+* cd dist
+* npm adduser
