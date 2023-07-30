@@ -1,4 +1,4 @@
-export {dateIsLessThanToday, dateIsGreatThanXMonths} from './dates';
-export {getAcronym} from './words';
-export {screenWidthIsMedium, screenWidthIsSmall} from './screen';
-export {isColorDark} from './colors';
+export * from './dates';
+export * from './words';
+export * from './screen';
+export * from './colors';

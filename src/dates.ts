@@ -29,7 +29,29 @@ const dateIsGreatThanXMonths = (lastSync: Date, months: number): boolean => {
   return today > xMonthsAfter;
 }
 
+const showStringDateInItFormat = (dateInIsoFormat: string): string => {
+  if (!isValidDateString(dateInIsoFormat)) {
+    return '';
+  }
+  return new Date(dateInIsoFormat! as string).toLocaleString('it-IT');
+};
+
+const isValidDateString = (dateString: string): boolean => {
+  return !isNaN(Date.parse(dateString));
+};
+
+const showTimestampInItFormat = (timestamp: number) => {
+  return new Date(timestamp).toLocaleString('it-IT');
+};
+
+const showDateObjectInItFormat = (date: Date) => {
+  return date.toLocaleString('it-IT');
+};
+
 export {
   dateIsLessThanToday,
-  dateIsGreatThanXMonths
+  dateIsGreatThanXMonths,
+  showStringDateInItFormat,
+  showTimestampInItFormat,
+  showDateObjectInItFormat
 };
