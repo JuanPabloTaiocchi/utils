@@ -1,6 +1,6 @@
 {
   "name": "jpma-utils",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "repository": "https://github.com/JuanPabloTaiocchi/utils.git",
   "description": "A set of JavaScript utils",
   "main": "lib/es5/index.js",
