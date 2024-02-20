@@ -1,3 +1,15 @@
+import * as dayjs from 'dayjs'
+
+/**
+ * Restituisce la data formattata secondo il formato richiesto ({@link https://day.js.org/docs/en/display/format})
+ * @param date: la data da formattare
+ * @param format: il formato di output
+ */
+const getDateFormatted = (date: Date, format: string): string => {
+  const d = dayjs(date);
+  return d.format(format);
+}
+
 /**
  * Determina se la data ricevuta in ingresso è inferiore alla mezzanotte del giorno odierno
  * @param lastSync: la data da valutare
@@ -48,10 +60,21 @@ const showDateObjectInItFormat = (date: Date) => {
   return date.toLocaleString('it-IT');
 };
 
+const showHourMinuteFromDateObject = (date: Date): string => {
+  return `${date.getHours()}:${date.getMinutes()}`;
+}
+
+const showDMYFromDateObject = (date: Date): string => {
+  return date.toLocaleDateString('it-IT')
+}
+
 export {
   dateIsLessThanToday,
   dateIsGreatThanXMonths,
   showStringDateInItFormat,
   showTimestampInItFormat,
-  showDateObjectInItFormat
+  showDateObjectInItFormat,
+  showHourMinuteFromDateObject,
+  showDMYFromDateObject,
+  getDateFormatted
 };
