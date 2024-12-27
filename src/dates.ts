@@ -11,6 +11,14 @@ const getDateFormatted = (date: Date, format: string): string => {
 }
 
 /**
+ * Ritorna in formato UTC la data odierna con tanto di offset
+ * @returns Per esempio: 2019-01-25T00:00:00-02:00
+ */
+const getTodayInUTCFormatWithOffset = (): string => {
+  return getDateFormatted(new Date(), 'YYYY-MM-DDTHH:mm:ssZ');
+}
+
+/**
  * Determina se la data ricevuta in ingresso è inferiore alla mezzanotte del giorno odierno
  * @param lastSync: la data da valutare
  */
@@ -32,6 +40,7 @@ const dateIsLessThanToday = (lastSync: Date): boolean => {
  * @returns True se la data è inferiore alla data calcolata
  */
 const dateIsGreatThanXMonths = (lastSync: Date, months: number): boolean => {
+  lastSync = new Date(lastSync);
   const today = new Date();
   const xMonthsAfter = new Date(
     lastSync.getFullYear(),
@@ -76,5 +85,6 @@ export {
   showDateObjectInItFormat,
   showHourMinuteFromDateObject,
   showDMYFromDateObject,
-  getDateFormatted
+  getDateFormatted,
+  getTodayInUTCFormatWithOffset
 };
