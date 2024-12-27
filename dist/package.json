@@ -1,6 +1,6 @@
 {
   "name": "jpma-utils",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "repository": "https://github.com/JuanPabloTaiocchi/utils.git",
   "description": "A set of JavaScript utils",
   "main": "lib/es5/index.js",
@@ -19,5 +19,8 @@
     "utilities"
   ],
   "author": "Juan Pablo Taiocchi",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dayjs": "^1.11.10"
+  }
 }
