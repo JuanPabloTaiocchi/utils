@@ -17,4 +17,9 @@ const getAcronym = (entityString: string): string => {
   return result;
 };
 
-export { getAcronym };
+const isAllInUpperCase = (str): boolean => {
+  return str === str.toUpperCase();
+}
+
+
+export { getAcronym, isAllInUpperCase };
